@@ -125,10 +125,10 @@ public class TresEnRaya {
 
 	public static void main(String args[]) {
 		char tablero[][] = {
-				// 0 1 2 = j
+				// 0 	1	 2 = j
 				{ '1', '2', '3' }, // Fila 0 = i
 				{ '4', '5', '6' }, // Fila 1 = i
-				{ '7', '8', '9' } // Fila 2 = i
+				{ '7', '8', '9' }  // Fila 2 = i
 		};
 
 		tablero = reiniciarTablero(tablero); // char[][]
