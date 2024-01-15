@@ -1,4 +1,4 @@
-package fundametos;
+package fundamentos;
 
 public class OperadorTernario {
 
