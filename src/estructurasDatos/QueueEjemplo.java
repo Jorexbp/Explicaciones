@@ -5,20 +5,21 @@ import java.util.LinkedList;
 
 public class QueueEjemplo {
     public static void main(String[] args) {
-        Queue<String> cola = new LinkedList<>();
+    	// FIFO
+        Queue<String> cajero = new LinkedList<>();
 
-        cola.offer("Elemento 1");
-        cola.offer("Elemento 2");
-        cola.offer("Elemento 3");
+        cajero.offer("Jorge");
+        cajero.offer("Luisa");
+        cajero.offer("Fernanda");
 
-        String primerElemento = cola.poll();
-        System.out.println("Primer elemento de la cola: " + primerElemento);
+        String primerCliente = cajero.poll();
+        System.out.println("Primer elemento de la cola: " + primerCliente);
 
-        String primerElementoSinEliminar = cola.peek();
-        System.out.println("Primer elemento de la cola sin eliminar: " + primerElementoSinEliminar);
+        primerCliente = cajero.peek();
+        System.out.println("Primer elemento de la cola : " + primerCliente);
 
         System.out.println("Elementos de la cola:");
-        for (String elemento : cola) {
+        for (String elemento : cajero) {
             System.out.println(elemento);
         }
     }
