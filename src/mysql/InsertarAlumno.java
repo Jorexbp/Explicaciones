@@ -3,9 +3,9 @@ import java.sql.*;
 
 public class InsertarAlumno {
     public static void main(String[] args) {
-        String dbUrl = "jdbc:mysql://localhost:3306/tu_base_de_datos";
-        String user = "tu_usuario";
-        String password = "tu_contraseña";
+        String dbUrl = "jdbc:mysql://localhost:3306/alumnos";
+        String user = "java";
+        String password = "password";
 
         try (Connection connection = DriverManager.getConnection(dbUrl, user, password)) {
             String sqlInsercion = "INSERT INTO Alumnos (nombre, nota_media, fecha_nacimiento, nacionalidad_espanola) VALUES (?, ?, ?, ?)";
