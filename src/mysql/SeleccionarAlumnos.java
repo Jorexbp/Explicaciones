@@ -24,7 +24,7 @@ public class SeleccionarAlumnos {
                     System.out.println("ID: " + id + ","
                     		+ " Nombre: " + nombre + ","
                     		+ " Nota Media: " + notaMedia + ","
-                    		+ " Fecha de Nacimiento: " + fechaNacimiento + ","
+                    		+ " Fecha de Nacimiento: " + fechaNacimiento + ",\n"
                     		+ " Nacionalidad Española: " + nacionalidadEsp);
                 }
             }
