@@ -1,10 +1,10 @@
 package patrones;
-// Producto
+
 interface Producto {
     void operacion();
 }
 
-// Implementación de un producto específico
+
 class ProductoConcreto implements Producto {
     @Override
     public void operacion() {
@@ -12,7 +12,7 @@ class ProductoConcreto implements Producto {
     }
 }
 
-// Fábrica de productos
+
 class Fabrica {
     public Producto crearProducto() {
         return new ProductoConcreto();
