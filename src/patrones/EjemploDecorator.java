@@ -6,6 +6,7 @@ interface Componente {
 
 
 class ComponenteConcreto implements Componente {
+	@Override
     public void operacion() {
         System.out.println("Operación en ComponenteConcreto");
     }
@@ -19,6 +20,7 @@ abstract class Decorador implements Componente {
         this.componente = componente;
     }
 
+ 
     public void operacion() {
         componente.operacion();
     }
@@ -29,7 +31,8 @@ class DecoradorConcreto extends Decorador {
     public DecoradorConcreto(Componente componente) {
         super(componente);
     }
-
+    
+    @Override
     public void operacion() {
         super.operacion();
         agregarFuncionalidad();
@@ -42,7 +45,6 @@ class DecoradorConcreto extends Decorador {
 
 public class EjemploDecorator {
     public static void main(String[] args) {
-
         Componente componente = new ComponenteConcreto();
         Componente decorador = new DecoradorConcreto(componente);
         decorador.operacion();
