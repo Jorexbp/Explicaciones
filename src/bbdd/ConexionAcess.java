@@ -7,7 +7,7 @@ public class ConexionAcess {
      String dbUrl = "jdbc:ucanaccess://Ejemplo.accdb";
 
         try (Connection connection = DriverManager.getConnection(dbUrl)) {
-            String sql = "SELECT * FROM empleados";
+            String sql = "SELECT * FROM alumnos";
 
             try (Statement statement = connection.createStatement()) {
             	
