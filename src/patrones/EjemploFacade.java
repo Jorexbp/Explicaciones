@@ -1,5 +1,5 @@
 package patrones;
-// Subsistema: Clase para operaciones matemáticas básicas
+
 class Suma {
     public int sumar(int a, int b) {
         return a + b;
@@ -18,7 +18,7 @@ class Multiplicacion {
     }
 }
 
-// Facade: Clase que proporciona una interfaz unificada para el subsistema
+// Esto sería la Facade
 class Calculadora {
     private Suma suma;
     private Resta resta;
@@ -43,12 +43,11 @@ class Calculadora {
     }
 }
 
-// Cliente: Usa la fachada para realizar operaciones matemáticas
+
 public class EjemploFacade {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
 
-        // Usando la fachada para realizar operaciones
         int resultadoSuma = calculadora.sumar(5, 3);
         int resultadoResta = calculadora.restar(10, 4);
         int resultadoMultiplicacion = calculadora.multiplicar(2, 6);
